@@ -1,0 +1,880 @@
+.oculto, input.oculto {
+    display: none;
+}
+
+dt span {
+	font-size: 16px;
+	color: #000000;
+	font-family: Calibri, Verdana;
+}
+
+.textoOut {
+	font-size: 18px;
+	color: #000000;
+	font-family: Calibri, Verdana;
+	width: auto;
+}
+
+.panelRich{
+	webkit-border-top-left-radius:12px;
+	-moz-border-radius-topleft:12px;
+	border-top-left-radius:12px;
+	-webkit-border-top-right-radius:12px;
+	-moz-border-radius-topright:12px;
+	border-top-right-radius:12px;
+	-webkit-border-bottom-right-radius:12px;
+	border-bottom-left-radius:12px;
+}
+
+.etiquetaTitulo {
+	font-size: 24px;
+	color: Black;
+	font-family: Calibri, Verdana;
+	font-weight: bold;	
+	text-align: center;	
+}
+
+/* Estilos generales */
+body {
+	font-family: Calibri, Verdana;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-color: #FFFFFF;
+}
+
+.tituloBannerMigracionColombia{
+	position: absolute;
+    left: 50%;
+    top: 120px;
+    z-index: 2;
+    height: auto;
+    float: right;
+    font-family: Arial Black;
+    font-size: 12px;
+}
+
+input.texto {
+	font-size: 18px;
+	color: #000000;	
+	font-family: Calibri, Verdana;
+	border-style: inset;
+	border-top:1px solid #7e7b7b;
+	border-left:1px solid #7e7b7b;
+	border-right:1px solid #C0C0C0;
+	border-bottom:1px solid #C0C0C0;
+	
+}
+input.texto15 {
+	font-size: 18px;
+	color: #000000;	
+	font-family: Calibri, Verdana;
+	border-style: inset;
+	border-top:1px solid #7e7b7b;
+	border-left:1px solid #7e7b7b;
+	border-right:1px solid #C0C0C0;
+	border-bottom:1px solid #C0C0C0;
+}
+
+textarea.texto {
+	font-size: 18px;
+	color: #000000;	
+	font-family: Calibri, Verdana;
+	border-style: inset;
+	border-top:1px solid #7e7b7b;
+	border-left:1px solid #7e7b7b;
+	border-right:1px solid #C0C0C0;
+	border-bottom:1px solid #C0C0C0;
+}
+
+/* Texto azul 11px */
+.etiqueta2 {
+	font-size: 18px;
+	color: #FFFFFF;
+	font-family: Calibri, Verdana;
+	text-align: right;	
+}
+
+
+/* Estilos template */
+.mainPanel {
+/*	width: 968px;*/
+	height: 553px;
+	border: 1px;
+	text-align: left;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+/**imagen de fondo*/
+img[src="/sire/imagenes/cabezotes/migracionf.jpg"]{
+	width:100%;
+	height:100%;
+}
+img[src="/sire/imagenes/pieDePagina/cortinaInferior.jpg"]{
+	width:100%;
+	height:99px;
+}
+.mainPanelExterna {
+	width: 968px;
+	height: 580px;
+	border: 1px;
+	text-align: left;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.mainModalPanel {
+	width: 100%;
+	height: 430px;
+	border: 0px;
+	text-align: left;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.panel {
+	width: 100%;
+}
+.panel90 {
+	width: 90%;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.homePanel {
+	width: 100%;
+	height: 553px;
+	background-image: url(../imagenes/fondo-home.jpg);
+	background-repeat: no-repeat;
+	vertical-align: top;	
+}
+
+.mainTable {
+	border: 1px;
+	border-style: solid;
+	border-color: #c0c0c0;	
+	vertical-align: top;
+	margin: 0px;
+	width: 100%;
+}
+
+.mainTable tr td {
+	border-color: #c0c0c0;
+}
+
+.mainTableExterna {
+	border: 1px;
+	border-style: solid;
+	border-color: #c0c0c0;	
+	vertical-align: top;	
+	margin: 0px;
+}
+
+.mainTableExterna tr td {
+	border-color: #c0c0c0;
+}
+
+.modalTable {
+	vertical-align: top;
+}
+
+.menuPanel {
+	width: 99%;
+	height: 553px;
+	background-image: url(../imagenes/fondo-gris.jpg);
+	border: 1px;
+	border-style: solid;
+	border-color: #c0c0c0;
+	vertical-align: top;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	overflow: auto;
+
+}
+
+.contentPanel {
+	width: 100%;
+	height: 100%;
+	background-image: url(../imagenes/fondo-gris.jpg);
+	border: 1px;
+	vertical-align: top;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.contentPanelModal {
+	width: 100%;
+	vertical-align: top;
+	margin-top: 0px;
+	margin-left: 0px;	
+	margin-right: 0px;
+}
+
+.contentPanelFondo {
+	background-image: url(../imagenes/fondo-externa.jpg);
+	background-repeat: no-repeat;
+}
+
+.contentPanelFondoSolicitar {
+	background-image: url(../imagenes/fondo-externa1.jpg);
+	background-repeat: no-repeat;
+}
+
+.contentPanelExterna {	
+	width: 99%;
+	height: 600px;
+	border: 0px;
+	vertical-align: top;
+	margin-top: 0px;
+	margin-left: 0px;	
+	margin-right: 0px;	
+	background-image: url(../imagenes/fondo-externa2.jpg);
+	background-repeat: no-repeat;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.contentPanelExternaSolicitar {
+	width: 99%;
+	height: 450px;
+	border: 1px;
+	vertical-align: top;
+	margin-top: 15px;
+	margin-left: 5px;	
+	margin-right: 5px;
+	background-color: White;
+	background-repeat: no-repeat;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.contentPanelExternaRecordar {
+	width: 100%;
+	border: 1px;
+	vertical-align: top;
+	margin-top: 15px;
+	margin-left: -1px;	
+	margin-right: 5px;	
+	background-image: url(../imagenes/fondo-externa-recordar.jpg);
+	background-repeat: no-repeat;
+}
+
+.errorPanel {
+	text-align: center;
+	border: 0px;
+}
+
+.messagesPanel {
+	height: 225px;
+	width: 525px;
+	border: 0px;	
+	overflow: auto; 	
+}
+
+.piePagina {
+	font-family: Arial, Verdana;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #1E603C;
+	vertical-align: middle;
+	text-align: center;
+}
+
+span {
+	font-family: Calibri;
+	font-size: 11px;
+}
+
+.header {
+	background-image: url(../imagenes/header.jpg);
+}
+
+.headerExterna {
+/*	background-color: #eceaf5;*/
+}
+
+.hidelink {
+	padding-top:2px;
+	padding-right:1px;
+	cursor:pointer;
+}
+
+/* Componentes alineados arriba */
+.top {
+    vertical-align: top;
+    
+}
+
+/* Componente invisible */
+.invisible {
+	display: none;
+}
+
+/* Panel alto con scroll  */
+.panelScroll {
+    height: 202px;
+    overflow: auto;
+}
+
+/* Título panel de mensajes */
+.panelTitle {
+	margin-left: 10px;
+	font-size: 12px;
+	white-space: pre-wrap;
+}
+
+/* Texto azul grande negrilla */
+.titulo {
+	font-weight: bold;
+	font-size: 30px;
+	color: #0066cc;
+	font-family: Arial, Verdana;
+	text-decoration: none;
+}
+
+/* Título azul 16px */
+.titulo2 {
+	font-family: Arial, Verdana;
+	font-size: 16px;
+	font-weight: bold;
+	color: #003366;
+}
+
+/* Texto negro grande negrilla */
+.subTitulo {
+	font-family: Arial, Verdana;
+	font-size: 14px;
+	color: Black;
+	font-weight: bold;
+	background-color: #ffffff;
+}
+
+/* Texto azul grande subrayado */
+.subTitulo2 {
+	font-family: Arial, Verdana;
+	font-size: 14px;
+	color: 0066cc;
+	font-weight: bold;
+	text-decoration: underline;
+	background-color: #ffffff;
+}
+
+/* Texto azul oscuro */
+.subtitulo3 {
+	font-family: Arial, Verdana;
+	font-size: 11px;
+	font-weight: normal;
+	color: #0033CC;
+	text-indent: 5px;
+}
+
+/* Texto azul claro */
+.subtitulo4 {
+	font-family: Arial, Verdana;
+	font-size: 10px;
+	font-weight: bold;
+	color: #003366;
+	text-indent: 5px;
+}
+
+/* Texto azul */
+.subtitulo5 {
+	font-family: Arial, Verdana;
+	font-size: 12px;
+	font-weight: bold;
+	color: #003366;
+}
+
+/* Texto verde */
+.subtitulo6 {
+	font-family: Arial, Verdana;
+	font-size: 12px;
+	font-weight: bold;
+	color: #42A239;
+}
+
+/* Texto gris 12px negrilla */
+.notaGrandeGris {
+	color: #666666;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+/* Texto negro 12px negrilla */
+.notaGrandeNegra {
+	color: Black;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+/* Texto azul 12px negrilla */
+.notaGrandeAzul {
+	color: #0066cc;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.etiqueta {
+	font-size: 18px;
+	color: Black;
+	font-family: Calibri, Verdana;
+	text-align: right;
+	width: auto;	
+}
+
+
+/* Texto azul 15px */
+.etiqueta15 {
+	font-size: 15px;
+	color: #0066cc;
+	font-family: Arial, Verdana;
+	text-align: right;	
+}
+
+/* Texto negro pequeño */
+.etiquetaSmall {
+	font-size: 9px;
+	color: Black;
+	font-family: Arial, Verdana;
+	font-weight: bold
+}
+
+/* Texto blanco pequeño */
+.etiquetaSmallBlanca {
+	font-size: 9px;
+	color: #ffffff;
+	font-family: Arial, Verdana;
+	font-weight: bold;
+}
+
+/* Texto negro 10px */
+.texto {
+	font-size: 18px;
+	color: #000000;
+	font-family: Calibri, Verdana;
+	width: auto;
+}
+
+.texto2 {
+	font-family: Arial, Verdana;
+	font-size: 11px;
+	font-weight: normal;
+	color: #003399;
+}
+
+.tituloCentrado14 {
+	font-size: 14px;
+	color: #000000;
+	font-family: Arial, Verdana;
+	font-weight: bold;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+/* Texto negro 10px negrilla */
+.textoNegrilla {
+	font-size: 10px;
+	color: #000000;
+	font-family: Arial, Verdana;
+	font-weight: bold;
+}
+
+/* Texto cursiva negro 10px */
+.textoCursiva {
+	font-size: 10px;
+	color: #000000;
+	font-family: Arial, Verdana;
+	font-style:italic;
+}
+
+/** Texto azul 10px */
+.textoSmall {
+	font-size: 10px;
+	color: #c4ddf9;
+	font-family: Arial, Verdana;
+	font-weight: bold;	
+}
+
+/** Texto gris 10px */
+.textoSmallGris {
+	font-size: 10px;
+	color: #666666;
+	font-family: Arial, Verdana;
+	font-weight: bold;	
+}
+
+/* Texto azul oscuro 14px */
+.textoSubtituloGrande {
+	color: #003b68;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/** Estilo ítems tabla por estado */
+.entradaNueva {
+	background-color: #FFFFFF;
+}
+
+.entradaEliminada {
+	background-color: #FFFFFF;
+}
+
+.entradaConsultada {
+	background-color: #FFFFFF;
+}
+
+
+.mensaje {
+	font-size: 16px;
+	color: #000000;
+	font-family: Calibria, Verdana;
+}
+
+/* Mensaje jsf tipo info */
+.mensajeInfo {
+	padding-left: 20px;
+	height: 30px;
+	font-size: 10px;	
+	background-image: url(../imagenes/info.png);
+	background-repeat: no-repeat;
+	color: #000000;
+	font-family: Arial, Verdana;
+}
+
+/* Mensaje jsf tipo warning */
+.mensajeWarn {
+	padding-left: 20px;
+	height: 30px;
+	font-size: 10px;	
+	background-image: url(../imagenes/warning.png);
+	background-repeat: no-repeat;
+	color: #000000;
+	font-family: Arial, Verdana;
+}
+
+/* Mensaje jsf tipo error */
+.mensajeError {
+	/*padding-left: 20px;
+	height: 30px;*/
+	font-size: 10px;
+	background-image: url(../imagenes/info.png);
+	background-repeat: no-repeat;
+	color: #000000;
+	font-family: Arial, Verdana;
+}
+
+/* Mensaje jsf tipo fatal */
+.mensajeFatal {
+	padding-left: 20px;
+	height: 30px;
+	font-size: 10px;
+	background-image: url(../imagenes/fatal.png);
+	background-repeat: no-repeat;
+	color: #000000;
+	font-family: Arial, Verdana;
+}
+
+/* Mensaje de validación individual */
+.textoMensaje {
+	font-size: 10px;
+	color: #000000;
+	font-family: Arial, Verdana;
+}
+
+/* Item en lista */
+.item {
+	background-image: url(../imagenes/icon-item.gif);
+	background-repeat: no-repeat;
+	border: 0;
+}
+
+/* Listas de selección */
+.combo {
+	color: #5c5b5b;
+	font-size: 18px;
+	font-family: Calibri, Verdana;
+}
+
+/* Botones */
+
+.botonAtras,
+button[type="button"], 
+button[type="reset"], 
+button[type="submit"], 
+input[type="reset"], 
+input[type="submit"], 
+input[type="button"]{
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #ffffff) );
+	background-color:#594fc4;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	border-bottom-left-radius:6px;
+	text-indent:0;
+	border:1px solid #594fc4;
+	display:inline-block;
+	color:#594fc4;
+	font-family:Calibri;
+	font-weight:bolder;
+	font-style:normal;
+	text-decoration:none;
+	text-align:center;
+	padding: 5px 20px;
+	font-size: 16px; 
+}
+
+.botonCentrado,
+button[type="button"], 
+button[type="reset"], 
+button[type="submit"], 
+input[type="reset"], 
+input[type="submit"], 
+input[type="button"] {
+	-moz-box-shadow:inset 0px 1px 0px 0px #594fc4;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #594fc4;
+	box-shadow:inset 0px 1px 0px 0px #594fc4;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #594fc4), color-stop(1, #594fc4) );
+	background:-moz-linear-gradient( center top, #594fc4 5%, #594fc4 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#594fc4', endColorstr='#594fc4');
+	background-color:#594fc4;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+	text-indent:0;
+	border:1px solid #594fc4;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Calibri;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #594fc4;
+	padding: 5px 20px;
+	font-size: 16px; 
+}
+
+/* Radio buttons */
+.radio {
+	font-family: Arial, Verdana;
+	font-size: 12px;
+}
+
+/* Porcentajes de ancho de columna para tablas */
+
+.col5 {
+	width: 5%;
+}
+
+.col10 {
+	width: 10%;
+}
+
+.col15 {
+	width: 15%;
+}
+
+.col20 {
+	width: 20%;
+}
+
+.col25 {
+	width: 25%;
+}
+
+.col30 {
+	width: 30%;
+}
+
+.col35 {
+	width: 35%;
+}
+
+.col40 {
+	width: 40%;
+}
+
+.col45 {
+	width: 45%;
+}
+
+.col50 {
+	width: 50%;
+}
+
+.col55 {
+	width: 55%;
+}
+
+.col60 {
+	width: 60%;
+}
+
+.col65 {
+	width: 65%;
+}
+
+.col70 {
+	width: 70%;
+}
+
+.col75 {
+	width: 75%;
+}
+
+.col80 {
+	width: 80%;
+}
+
+.col85 {
+	width: 85%;
+}
+
+.col90 {
+	width: 90%;
+}
+
+.col95 {
+	width: 95%;
+}
+.tituloPop {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.cuadroPop {
+	border: thin solid #0066CC;
+}
+.titulo2Pop {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #000000;
+	font-weight: bold;
+}
+.textPop {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	text-align: justify;
+}
+.text2Pop {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #999999;
+}
+/**Formulario de autenticación*/
+#formLogin{
+	
+}
+#formLogin\:loginHelpToolbar tr>td:first-of-type{
+	width: 580px;
+}
+#formLogin\:oculto{
+	
+}
+/**
+Menús de ayuda en el cuadro de autenticación
+*/
+#formLogin\:loginHelpToolbar td>table {
+	border: 2px solid #CCCCCC;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px; 
+	-khtml-border-radius: 4px;
+	padding:5px;
+	margin:5px;
+}
+
+/**Estilos enviados por Pedro Quiceno*/
+input[type="text"],input[type="password"],textarea,input[type="radio"],select{
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px; 
+	-khtml-border-radius: 7px;
+	box-shadow: 5px 5px 5px #888888;	
+}
+/**Encabezado de página*/
+#formHeader\:flashHeader>table,
+table#flashHeader{
+	background-image:url('../imagenes/cabezotes/migraciona.jpg');
+	background-repeat: no-repeat;
+	width: 100%;
+}
+#formHeader\:flashHeader>table img,
+table#flashHeader img{
+	margin-left:10%;
+	width: 20%;
+	height: auto
+}
+/**Pie de página con el estilo que debe ser*/
+td.headerExterna td >img{
+	display:block;
+}
+td.headerExterna td,
+td.headerExterna > center{
+	font-family:Arial Black;
+	font-size: 12px;
+}
+/**Fondo para el pie de página*/
+table#footer{
+	background-image:url('../imagenes/pieDePagina/cortinaInferior.jpg');
+	height:95px;
+	background-repeat: no-repeat;
+	background-size: 100% 93px;
+}
+table#footer td:first-of-type{
+	padding-bottom:20px;
+}
+/**		--- CARGUE DE INFORMACIÓN ---*/
+/**Corrección para que los campos de fecha al final del cargue de archivo se vean completos.*/
+form#cargueFormGB{
+	margin-bottom:150px;
+}
+/**Solución para que los controles de calendario en la esquina derecha no oculten fechas.*/
+form#cargueFormReligiosas table.rich-panel>tbody>tr>td{
+	width:25%;
+}
+.rich-tab-active
+{
+  background-image : none;
+  background-color: #46A63D;
+  color: white;
+  font-style: oblique;
+  font-weight:bold;
+  height: 50px;
+}
+.rich-tab-inactive
+{
+  height: 40px;
+}

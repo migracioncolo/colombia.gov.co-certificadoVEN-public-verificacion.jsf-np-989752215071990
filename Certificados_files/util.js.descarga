@@ -1,0 +1,139 @@
+
+/**
+ * Limpiar captcha
+ */
+function limpiarCaptcha(){
+	document.getElementById('consultarPEP:secureText').value = null;
+	document.getElementById('VerificaCodigo:secureText').value = null;
+}
+/**
+ * Función que muestra el div para realizar la consulta del código de verificacion
+ */
+function showModalSolicitaCertificado(){
+	document.getElementById('modalSolicitaCertificado').style.display = 'none';	
+	document.getElementById('modalVerificaCertificado').style.display = 'block';
+
+}
+
+/**
+ * Función que muestra el div para realizar la consulta
+ */
+function showModalVerificaCertificado(){
+	document.getElementById('modalSolicitaCertificado').style.display = 'block';	
+	document.getElementById('modalVerificaCertificado').style.display = 'none';
+}
+
+/**
+ * Función que muestra el panel de resultado de la consulta
+ */
+function showMessagesPanelResultados() {
+	if (!haveMessages()) {
+		// Abre el panel de resultados
+		Richfaces.showModalPanel('resultPanel');
+	}
+	
+}
+/**
+ * Función que muestra el panel de mensajes de error/advertencia/información.
+ */
+function showMessagesPanel() {
+	if (haveMessages()) {
+		// Abre el panel de mensajes
+		Richfaces.showModalPanel('messagesPanel');
+		// Fija el foco en el botón principal
+		var messagesButton = document.getElementById('messagesForm:messagesButton');
+		messagesButton.focus();
+	}
+}
+
+/**
+ * Determina si hay mensajes de error/advertencia/información encolados.
+ */
+function haveMessages() {
+	var queuedMessages = document.getElementById('queuedMessages').innerHTML;
+	if (queuedMessages == 'true') {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+/*
+ * Regresa en el historial
+ */
+function back(){	
+	history.go(-1);
+	return false;	
+}
+
+/**
+ * Función que muestra el panel de confirmación.
+ */
+function openConfirmationPanel(formId) {
+	// Abre el panel de confirmación
+	Richfaces.showModalPanel('confirmationPanel');
+	// Fija el foco en el botón cancelar
+	var cancelButton = document.getElementById(formId + ':cancelButton');
+	try {
+		cancelButton.focus();
+	} catch (ex) {
+		//alert(ex.description);  			
+ 	}
+    return false;
+}
+
+function  formatTableOfOnlyOneTr(idTabla,numColumnas){
+	
+	if(jQuery(idTabla +' tr td')!==null && jQuery(idTabla +' tr td').length!==0){
+		
+		var total=jQuery(idTabla +' tr td').length;
+		var filas=parseInt(total/numColumnas);
+		var listaInputs = [];
+		
+		
+		 jQuery(idTabla +' tr').each(function (index) {
+			jQuery(this).children("td").each(function (index2,dat) {
+				listaInputs[index2]=jQuery(this).html();
+			});
+			jQuery(idTabla +' tbody').html("");			
+		 });
+		
+		 var item=0;
+		 for(var i=0;i<filas;i++){
+			 jQuery(idTabla +' tbody').append("<tr>");
+			
+			for(var j=0;j<numColumnas;j++){
+				if(item<=total){
+					jQuery(idTabla +' tbody').append("<td>"+listaInputs[item]+"</td>");
+					
+					item++;
+				}
+			}
+			jQuery(idTabla +' tbody').append("</tr>");
+		 }
+	}else{
+		console.log("Id de tabla incorrecto");
+	}	
+}
+
+/**
+ * Función que muestra el panel de resultado de la consulta
+ */
+function showMessagesPanelResultados2() {
+	if (!haveMessages()) {
+		// Abre el panel de resultados
+		Richfaces.showModalPanel('resultPanelCDV');
+	}
+}
+/**
+ * Función que muestra el panel de mensajes de error/advertencia/información.
+ */
+function showMessagesPanelSC() {
+	if (haveMessages()) {
+		// Abre el panel de mensajes
+		Richfaces.showModalPanel('messagesCE');
+		// Fija el foco en el botón principal
+		var messagesButton = document.getElementById('messagesForm:messagesButton');
+		messagesButton.focus();
+	}
+}
